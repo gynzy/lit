@@ -1,9 +1,6 @@
 {
-  "name": "@lit/reactive-element",
+  "name": "@gynzy/lit-reactive-element",
   "version": "1.3.3",
-  "publishConfig": {
-    "access": "public"
-  },
   "description": "A simple low level base class for creating fast, lightweight web components",
   "license": "BSD-3-Clause",
   "repository": {
