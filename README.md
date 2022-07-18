@@ -48,4 +48,13 @@ At the moment no CI exists. For now, the manual steps can be used.
 3. Install all packages using `npm ci`.
 4. Ensure the required patches are applied / have no conflict.
 5. Build all packages using `npm run build`.
-6. Publish the packages to the private npm repository: `npm publish`. The `@gynzy`-scope ensures that the package is published to the private Gynzy repository.
+6. Publish each package to the private npm repository. The `@gynzy`-scope ensures that the package is published to the private Gynzy repository.
+     
+	 1. Go to each package folder
+	      
+		  1. `packages/lit`
+		  2. `packages/lit-element`
+		  3. `packages/lit-html`
+		  4. `packages/reactive-element`
+
+	 2. Run `npm publish` in each package folder to publish to the repository.
