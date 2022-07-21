@@ -237,14 +237,14 @@ const generateTerserOptions = (
       testPropertyPrefix
     );
   },
-  mangle: {
+  mangle: /*{
     properties: {
       regex: /^_/,
       reserved: reservedProperties,
       // Set to true to mangle to readable names
       debug: false,
     },
-  },
+  },*/false
 });
 
 export function litProdConfig({

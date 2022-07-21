@@ -1,5 +1,5 @@
 {
-  "name": "lit-html",
+  "name": "@gynzy/lit-html",
   "version": "2.2.6",
   "description": "HTML templates literals in JavaScript",
   "license": "BSD-3-Clause",
