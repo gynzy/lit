@@ -26,9 +26,9 @@ All package names are scoped such that they can be published to the private Gynz
 
 | Original name         | Fork name                   |
 |-----------------------|-----------------------------|
-| lit                   |  @gynzy/lit                 |
-| lit-element           |  @gynzy/lit-element         |
-| lit-html              |  @gynzy/lit-html            |
+| lit                   | @gynzy/lit                  |
+| lit-element           | @gynzy/lit-element          |
+| lit-html              | @gynzy/lit-html             |
 | @lit/reactive-element | @gynzy/lit-reactive-element |
 
 ### Scoped dependencies
