@@ -18,7 +18,9 @@ This fork has three (non-functional) changes compared to the original packages:
 
 ### No mangling of (export) names
 
-In `rollup-common.js` the `mangle` option in `generateTerserOptions` is disabled. This is required for Gynzy build processes in projects that use `lit`. 
+In `rollup-common.js` the `mangle` option in `generateTerserOptions` is disabled. This is required for Gynzy build process in [external-board-tools](https://github.com/gynzy/external-board-tools/). 
+
+In external-board-tools there's a package [base-tool](https://github.com/gynzy/external-board-tools/) which contains generic functionality for tools. During build every tool is split such that generic functionality is imported from base-tool. In order to make this happen it is important that names are not mangled, which was the default for lit-element 1 (when the plan was devised and executed), but not for lit 2.
 
 ### Scoped package names
 
@@ -26,9 +28,9 @@ All package names are scoped such that they can be published to the private Gynz
 
 | Original name         | Fork name                   |
 |-----------------------|-----------------------------|
-| lit                   |  @gynzy/lit                 |
-| lit-element           |  @gynzy/lit-element         |
-| lit-html              |  @gynzy/lit-html            |
+| lit                   | @gynzy/lit                  |
+| lit-element           | @gynzy/lit-element          |
+| lit-html              | @gynzy/lit-html             |
 | @lit/reactive-element | @gynzy/lit-reactive-element |
 
 ### Scoped dependencies
